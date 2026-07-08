@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <button id="volver" onclick="location.href='../'">
+        ← Menú
+    </button>
+
+    <h1>♠ Solitario</h1>
+
+    <button id="nuevoJuego">
+        Nueva partida
+    </button>
+</header>
+
+<div id="game">
+    <div class="top-row">
+        <div id="stock" class="pile">🂠</div>
+        <div id="waste" class="pile"></div>
+
+        <div class="spacer"></div>
+
+        <div class="foundation" data-foundation="0"></div>
+        <div class="foundation" data-foundation="1"></div>
+        <div class="foundation" data-foundation="2"></div>
+        <div class="foundation" data-foundation="3"></div>
+    </div>
+
+    <div id="tableau" class="tableau"></div>
+</div>
+
+<div id="winScreen" class="hidden">
+    <div class="winBox">
+        <h2>🏆 ¡Victoria!</h2>
+        <p>Has completado el solitario.</p>
+        <button onclick="startGame()">Jugar otra vez</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

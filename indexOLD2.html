@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGT Arcade Hub</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#111;color:#fff;min-height:100vh}
+header{text-align:center;padding:30px;background:#1a1a1a}
+h1{font-size:3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:30px;max-width:1500px;margin:auto}
+.card{background:#222;padding:20px;border-radius:18px;cursor:pointer;transition:.2s;text-align:center;border:2px solid #333}
+.card:hover{transform:translateY(-5px);box-shadow:0 0 20px rgba(255,255,255,.2)}
+.icon{font-size:48px;margin-bottom:10px}
+h2{font-size:1.2rem;margin-bottom:8px}
+p{color:#bbb}
+</style>
+<script>
+function abrirJuego(url){window.location.href=url;}
+</script>
+</head>
+<body>
+<header>
+<h1>🎮 AGT ARCADE HUB</h1>
+<p>Retro, Pokémon y minijuegos</p>
+</header>
+<div class="grid">
+<div class="card" onclick="abrirJuego('sans/')"><div class="icon">💀</div><h2>Sans Fight</h2><p>Bad Time Simulator</p></div>
+<div class="card" onclick="abrirJuego('solitario/')"><div class="icon">♠️</div><h2>Solitario</h2><p>Klondike</p></div>
+<div class="card" onclick="abrirJuego('ajedrez/')"><div class="icon">♚</div><h2>Ajedrez</h2><p>Chess</p></div>
+<div class="card" onclick="abrirJuego('pokemon/Esmeralda/pokemon_esmeralda.html')"><div class="icon">🦎</div><h2>Pokémon Esmeralda</h2><p>GBA</p></div>
+<div class="card" onclick="abrirJuego('pokemon/RojoFuego/pokemon_rojofuego.html')"><div class="icon">🔥</div><h2>Pokémon Rojo Fuego</h2><p>GBA</p></div>
+<div class="card" onclick="abrirJuego('pokemon/Plata/pokemon_plata.html')"><div class="icon">🥈</div><h2>Pokémon Plata</h2><p>NDS</p></div>
+<div class="card" onclick="abrirJuego('pokemon/Platino/pokemon_platino.html')"><div class="icon">💎</div><h2>Pokémon Platino</h2><p>NDS</p></div>
+<div class="card" onclick="abrirJuego('pokemon/Blanco/pokemon_blanco.html')"><div class="icon">⚪</div><h2>Pokémon Blanco</h2><p>NDS</p></div>
+<div class="card" onclick="abrirJuego('pokemon/Negro2/pokemon_negro2.html')"><div class="icon">⚫</div><h2>Pokémon Negro 2</h2><p>NDS</p></div>
+<div class="card" onclick="abrirJuego('pokemon/AshGray/pokemon_ashgray.html')"><div class="icon">⚡</div><h2>Pokémon Ash Gray</h2><p>Hack ROM GBA</p></div>
+<div class="card" onclick="abrirJuego('pokemon/TeamRocket/pokemon_teamrocket.html')"><div class="icon">🚀</div><h2>Pokémon Team Rocket</h2><p>Hack ROM GBA</p></div>
+<div class="card" onclick="abrirJuego('mario/supermariobrosds/supermariobrosds.html')"><div class="icon">🍄</div><h2>New Super Mario Bros</h2><p>Nintendo DS</p></div>
+</div>
+</body>
+</html>

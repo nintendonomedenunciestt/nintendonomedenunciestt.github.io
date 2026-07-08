@@ -1,0 +1,11 @@
+# ROMs
+*/roms/
+
+# ZIPs
+*.zip
+
+# Saves
+*.sav
+
+# Logs
+*.log
